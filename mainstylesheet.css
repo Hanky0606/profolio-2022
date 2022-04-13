@@ -1,0 +1,285 @@
+@font-face {
+    font-family:'Oswald', sans-serif ;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Oswald', sans-serif;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #333333;
+}
+
+header{
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    border-bottom: solid 2px #333333;
+    box-shadow: 0px 5px 5px 5px #000000;
+    z-index: 1;
+}
+
+#logo img{
+    width: 100px;
+    height: auto;
+    margin: 2rem;
+    position: absolute;
+}
+nav{
+    text-align: right;
+    margin-top: 130px;
+}
+
+nav li{
+    display: inline;
+    margin-right: 3rem;
+    font-size: 1.2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    border-bottom: solid 3px #6fcfeb;
+}
+
+/*Slideshow container*/
+.mySlides {
+    padding-top: 190px;
+}
+.mySlides img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/*About me text*/
+div#about{
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 2.5rem;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: dashed 1px #fff;
+    padding-bottom: 30px;
+}
+
+h2{
+    font-size: 20px;
+    text-transform: capitalize;    
+}
+
+#about p{
+    line-height: 2.5em;
+    font-weight: 300;
+}
+/*Skill set*/
+div.skillset-container{
+   width: 100%;
+   height: 80vh; 
+   margin: 0 auto;
+   padding: 3em;
+   text-align: center;
+   background-color: #000000;
+}
+
+.full_bar{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.level{
+    background-color: #ef2ac1;
+    text-align: right;
+    border-radius: 20px;
+}
+
+.level p{
+    margin: .5em;
+}
+
+button{
+    width:150px;
+    margin-top: 7rem;
+    border: solid 2px #fff;
+    border-radius: 15px;
+    padding:.5em;
+    background-color: #000000;
+}
+
+button a{
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+button:hover{
+    border: solid 3px #6fcfeb;
+}
+
+/* Gallary */
+
+
+
+
+/*Contact me*/
+#contact_me{
+    padding: 4em 2em 4em 2em;
+    margin: 0 auto;
+}
+fieldset{
+    margin: 0 auto;
+    max-width: 650px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 2rem;
+    
+}
+
+input{
+    width: 100%;
+    font-size: 30px;
+}
+
+fieldset legend{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+input[type=text]{
+    background-color: #333333;
+    font-size: 15px;
+    color: #fff;
+    margin: 1em 0;
+    padding: .5em;
+    border: none;
+    border-bottom: solid 2px #fff;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus{
+    border: solid 2px  #6fcfeb;
+}
+
+textarea{
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 1rem;
+    margin-top: 1em;
+}
+textarea:focus{
+    border: solid 2px #6fcfeb;
+}
+
+input[type=submit]{
+    background-color: #000000;
+    color: #fff;
+    width: 100px;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 15px;
+    float: right;
+}
+
+input[type=submit]:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+
+
+
+/*footer*/
+footer{
+    background-color: #000000;
+    height: 100px;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+}
+footer p{
+    padding: 1rem;
+}
